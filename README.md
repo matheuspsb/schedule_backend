@@ -2,7 +2,7 @@
 
 Bem-vindo ao projeto Schedule! Este guia irá levá-lo através dos passos necessários para configurar e iniciar o projeto.
 
-Schedule é uma agenda desenvolvido para organizar sua vida no dia a dia. O sistema permite salvar, filtrar e excluir eventos ou compromissos.
+Esse sistema permite salvar, buscar, editar e excluir dados.
 
 ## Pré-requisitos
 
@@ -17,13 +17,13 @@ Certifique-se de ter os seguintes softwares instalados em sua máquina:
 Para clonar o repositório usando HTTPS, execute o seguinte comando no terminal:
 
 ```bash
-git clone https://github.com/matheuspsb/schedule.git
+git clone https://github.com/matheuspsb/schedule_backend.git
 ```
 
 Se você preferir usar SSH, execute este comando:
 
 ```bash
-git clone git@github.com:matheuspsb/schedule.git
+git clone git@github.com:matheuspsb/schedule_backend.git
 ```
 
 ### 2. Instalar Dependências
