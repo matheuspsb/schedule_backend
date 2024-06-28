@@ -12,8 +12,8 @@ import {
 import { DatasService } from './datas.service';
 import { CreateDatasDto } from './dto/create-datas.dto';
 import { UpdateDatasDto } from './dto/update-datas.dto';
-import { ResponseProtocol } from 'settings/response-protocol';
-import { database } from 'settings/constants';
+import { database } from '@/settings/constants';
+import { ResponseProtocol } from '@/settings/response-protocol';
 
 import { ApiOperation, ApiTags } from '@nestjs/swagger';
 

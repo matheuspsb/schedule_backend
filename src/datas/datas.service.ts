@@ -4,7 +4,7 @@ import { Repository } from 'typeorm'
 import { CreateDatasDto } from './dto/create-datas.dto'
 import { UpdateDatasDto } from './dto/update-datas.dto'
 import { DatasEntity } from './entities/datas.entity'
-import { repositories } from 'settings/constants'
+import { repositories } from '@/settings/constants'
 
 @Injectable()
 export class DatasService {
