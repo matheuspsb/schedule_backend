@@ -29,6 +29,7 @@
     }
   },
   "include": [
+    "./api/*.ts",
     "src",
     "test"
   ]
