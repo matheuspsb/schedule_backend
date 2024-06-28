@@ -1,73 +1,70 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
+# Schedule - Guia de Execução
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
-  
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+Bem-vindo ao projeto Schedule! Este guia irá levá-lo através dos passos necessários para configurar e iniciar o projeto.
 
-## Description
+Esse sistema permite salvar, buscar, editar e excluir dados.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Pré-requisitos
 
-## Installation
+Certifique-se de ter os seguintes softwares instalados em sua máquina:
+- [Node.js](https://nodejs.org/)
+- [Yarn](https://classic.yarnpkg.com/en/docs/install/)
+
+## Passo a Passo para Execução do Projeto
+
+### 1. Clone o repositório
+
+Para clonar o repositório usando HTTPS, execute o seguinte comando no terminal:
 
 ```bash
-$ npm install
+git clone https://github.com/matheuspsb/schedule_backend.git
 ```
 
-## Running the app
+Se você preferir usar SSH, execute este comando:
 
 ```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+git clone git@github.com:matheuspsb/schedule_backend.git
 ```
 
-## Test
+### 2. Instalar Dependências
+
+Após clonar o repositório em sua máquina local. No terminal, navegue até o diretório do projeto e execute o comando abaixo para instalar todas as dependências necessárias:
 
 ```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+yarn install
 ```
 
-## Support
+### 3. Configurar o ENV
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+Em seguida, você precisa configurar o arquivo env. Crie um arquivo .env na raiz do projeto e adicione a URL da API conforme mostrado no arquivo env.example.
 
-## Stay in touch
+- Abra o arquivo env.example para ver o formato esperado:
 
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+```bash
+DB_HOST=
+DB_USER=
+DB_PASS=
+DB_NAME=
+DB_NAME_LOG=
+PORT=
+IS_DEVELOPMENT=
+```
+- Crie um novo arquivo .env na raiz do projeto e adicione os dados do banco
 
-## License
+```bash
+DB_HOST=sql.freedb.tech
+DB_USER=freedb_matheus
+DB_PASS=kHp6jqNHntFdXx?
+DB_NAME=freedb_shedule_officecom
+DB_NAME_LOG=freedb_shedule_officecom
+PORT=3306
+IS_DEVELOPMENT=true
+```
 
-  Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+### 4. Iniciar o Projeto
+
+Com todas as dependências instaladas e o env configurado, agora você pode iniciar o projeto com o Yarn. Execute o comando abaixo no terminal:
+
+```bash
+yarn start:dev
+```
