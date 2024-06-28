@@ -31,8 +31,8 @@ export class DatasService {
     return await this.repository.update(id, updateDatasDto)
   }
 
-  remove(id: string) {
-    return `This action removes a #${id} data`
+  async remove(id: string) {
+    return await this.repository.delete(id)
   }
 
   async queryBuilder(alias: string): Promise<any> {
