@@ -1,6 +1,6 @@
-import { database, repositories } from '@/settings/constants'
 import { DataSource } from 'typeorm'
 import { DatasEntity } from './datas.entity'
+import { database, repositories } from 'settings/constants'
 
 export const datasProviders = [
   {

@@ -7,16 +7,13 @@ import {
   Patch,
   Param,
   Delete,
-  UseGuards,
-  Headers,
-  SetMetadata
 } from '@nestjs/common';
 
 import { DatasService } from './datas.service';
 import { CreateDatasDto } from './dto/create-datas.dto';
 import { UpdateDatasDto } from './dto/update-datas.dto';
-import { database } from '@/settings/constants';
-import { ResponseProtocol } from '@/settings/response-protocol';
+import { ResponseProtocol } from 'settings/response-protocol';
+import { database } from 'settings/constants';
 
 import { ApiOperation, ApiTags } from '@nestjs/swagger';
 

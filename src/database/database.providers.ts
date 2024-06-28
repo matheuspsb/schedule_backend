@@ -1,5 +1,6 @@
+import { database } from 'settings/constants'
 import { DataSource } from 'typeorm'
-import { database } from '@/settings/constants'
+
 
 export const databaseProviders = [
   {

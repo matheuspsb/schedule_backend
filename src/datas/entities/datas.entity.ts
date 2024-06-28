@@ -1,5 +1,4 @@
-import { database } from '@/settings/constants'
-
+import { database } from 'settings/constants'
 import {
   Column,
   CreateDateColumn,
